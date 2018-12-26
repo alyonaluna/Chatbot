@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Web.Http;
-using System.Web.Http.Cors;
+﻿using System.Web.Http;
 
 namespace Chatbot
 {
@@ -8,11 +6,6 @@ namespace Chatbot
     {
         public static void Register(HttpConfiguration config)
         {
-            //GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.Re‌​ferenceLoopHandling = ReferenceLoopHandling.Ignore;
-            //// Web API configuration and services
-            //var cors = new EnableCorsAttribute("*", "*", "*");
-            //config.EnableCors(cors);
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 

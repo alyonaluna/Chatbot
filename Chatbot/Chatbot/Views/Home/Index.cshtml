@@ -2,8 +2,18 @@
     <script type="text/javascript" src="~/Scripts/Chatbot.js"></script>
 }
 
-<div>
-    <textarea data-bind="text: model.dialogToShow"></textarea>
-    <input type="text" data-bind="value: model.userLine" />
-    <button data-bind="click: send">Отправить</button>
+   
+<div class="chat-area">
+    <div class="form-group">
+        <textarea class="dialog form-control" data-bind="text: model.dialogToShow" readonly></textarea>
+    </div>
+    <div class="form-group">
+        <input 
+            type="text" 
+            class="user-input form-control" 
+            data-bind="value: model.userLine" 
+            maxlength="255"
+            placeholder="Введите сообщение.."/>
+        <button class="btn btn-primary" data-bind="click: send">Отправить</button>
+    </div>
 </div>
