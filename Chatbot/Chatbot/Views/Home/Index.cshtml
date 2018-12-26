@@ -1,0 +1,9 @@
+﻿@section Scripts {
+    <script type="text/javascript" src="~/Scripts/Chatbot.js"></script>
+}
+
+<div>
+    <textarea data-bind="text: model.dialogToShow"></textarea>
+    <input type="text" data-bind="value: model.userLine" />
+    <button data-bind="click: send">Отправить</button>
+</div>
