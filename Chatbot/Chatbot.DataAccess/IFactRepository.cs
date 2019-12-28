@@ -2,6 +2,7 @@
 {
     public interface IFactRepository
     {
+        //Hello:)
         /// <summary>
         /// Добавить факт в базу знаний
         /// </summary>
